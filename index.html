@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Restaurant Fictif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Section en-tête -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!--<a class="navbar-brand" href="#">Restaurant Fictif</a>-->
+            <img src="logoRF.png" alt="logoRF" height="60" width="90">
+            <h2 class="navbar-brand" >Restaurant Fictif</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos de nous</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section héros -->
+    <section id="hero" class="text-center text-black" style="background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover; height: 500px; display: flex; align-items: center; justify-content: center;">
+        <div>
+            <img src="bgImg.png" alt="bgImg">
+            <h1 class="display-4">Bienvenue au Restaurant Fictif</h1>
+            <marquee behavior="scroll" direction="left">
+                <h3>Un goût d'excellence à l'africaine</h3>
+            </marquee>
+            <a href="#menu" class="btn btn-warning">Voir le menu</a>
+        </div>
+    </section>
+
+    <!-- Section Menu -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Voici notre Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="plat1.png" class="card-img-top" alt="plat1" height="300" width="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Riz au poisson rouge</h5>
+                            <p class="card-text">Une délicieuse description de ce plat.</p>
+                            <p class="text-muted">5000 Francs CFA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="plat2.png" class="card-img-top" alt="plat2" height="300" width="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Athiéké poisson braisé</h5>
+                            <p class="card-text">Une délicieuse description de ce plat.</p>
+                            <p class="text-muted">7000 Francs CFA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="plat3.png" class="card-img-top" alt="plat3" height="300" width="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Grillade de viande</h5>
+                            <p class="card-text">Une délicieuse description de ce plat.</p>
+                            <p class="text-muted">10000 Francs CFA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos de nous -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="aboutImg.png" class="img-fluid" alt="About us" height="700" width="500">
+                </div>
+                <div class="col-md-6">
+                    <h2>À propos de nous</h2>
+                    <p>Notre restaurant est dédié à offrir des expériences culinaires inoubliables à l'africaine. Nous combinons des ingrédients frais et locaux avec des techniques de cuisine traditionnelles et innovantes .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contactez-nous</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-light text-black py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Restaurant Fictif. Tous droits réservés.</p>
+            <div>
+                <img src="fbicon.png" alt="logoFB" height="50" width="50">
+                    <a href="#" class="text-black me-2">Facebook</a>
+                <img src="insta.png" alt="logoInsta" height="50" width="50">
+                    <a href="#" class="text-black me-2">Instagram</a>
+                <img src="twitter.png" alt="logoTwitter" height="50" width="50">
+                    <a href="#" class="text-black">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
